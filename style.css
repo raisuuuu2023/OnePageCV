@@ -142,6 +142,31 @@ font-weight: 400;
 .project_item{
     margin-top: 2rem;
 }
+.CP {
+    margin-top: 2rem;
+}
+
+.cp_list {
+    margin-top: 2rem;
+    list-style: none;
+    padding-left: 0;
+    position: absolute;
+}
+
+.cp_list li {
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    position: relative;
+    padding-left: 1.8rem;
+}
+
+.cp_list li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: white;
+    font-weight: bold;
+}
 .contact_info{
     margin-top: 2rem;
 }
