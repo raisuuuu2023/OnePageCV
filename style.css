@@ -1,13 +1,18 @@
+/* Google Font Import */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+/* Global Reset */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+/* Root Variables */
 :root {
 	--primary-color: #ff7613;
 	--text-color: #727171;
 }
+/* Base HTML & Body Styles */
 html{
     font-size: 10px;
 }
@@ -16,6 +21,7 @@ body{
     background-color: black;
     color: white;
 }
+/* Global Element Styles */
 img{
     width: 100%;
 }
@@ -23,6 +29,7 @@ a{
     text-decoration: none;
     color: white;
 }
+/* Typography Styles */
 .title{
     color: palevioletred;
     font-weight: 700;
@@ -45,6 +52,7 @@ font-size: 1.4rem;
 color: white;
 font-weight: 400;
 }
+/* Main Resume Container */
 .container{
     max-width: 1000px;
     width: 90%;
@@ -55,6 +63,7 @@ font-weight: 400;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
 }
+/* Responsive Layout */
 @media only screen and (max-width: 768px) {
     .container{
         width: 100%;
@@ -63,10 +72,12 @@ font-weight: 400;
         gap: 7rem;
     }   
 }
+/* Profile Section */
 .profile{
     grid-column: 1/-1;
     margin-bottom: 2rem;
 }
+/* Group Sections */
 .group1,
 .group2{
     display: flex;
@@ -85,6 +96,7 @@ font-weight: 400;
 .group3 > div{
     flex: 1;
 }
+/* Responsive Profile & Group */
 @media only screen and (max-width: 768px){
     .profile{
         margin-bottom: 0;
@@ -134,14 +146,17 @@ font-weight: 400;
         flex-direction: column;
     }
 }
+/* Skills Section */
 .skills_list{
     margin-top: 1rem;
     margin-left: 2rem;
     line-height: 2;
 }
+/* Projects Section */
 .project_item{
     margin-top: 2rem;
 }
+/* Competitive Programming Section */
 .CP {
     margin-top: 2rem;
 }
@@ -167,6 +182,7 @@ font-weight: 400;
     color: white;
     font-weight: bold;
 }
+/* Contact & Social Section */
 .contact_info{
     margin-top: 2rem;
 }
@@ -185,6 +201,7 @@ font-weight: 400;
 .social_item svg{
     width: 2rem;
 }
+/* Divider Line */
 hr{
     grid-column: 1/-1;
     width: 80%;
